@@ -1,0 +1,165 @@
+/* Base Styles */
+body {
+    margin: 40px;
+    font-family: Arial, sans-serif;
+    color: #7f888f;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #3d4449;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #f56a6a;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #3d4449;
+    font-size: 1.5rem;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #7f888f;
+    font-weight: bold;
+}
+
+nav a.active, 
+nav a:hover {
+    color: #f56a6a;
+}
+
+/* Images */
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.banner {
+    margin-bottom: 30px;
+}
+
+/* Main Content Spacing */
+.intro {
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+#features {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 40px;
+}
+
+/* Grid Layouts for Features & Projects */
+.features, 
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+}
+
+/* Feature Item Layout */
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.feature .icon {
+    color: #f56a6a;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #f56a6a;
+    color: #f56a6a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #f56a6a;
+    color: #ffffff;
+}
+
+/* Projects Cards Layout */
+.projects article {
+    margin-bottom: 20px;
+}
+
+.projects img {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    color: #a6a6a6;
+    font-size: 0.85rem;
+}
+
+/* Responsive Layout for Mobile Devices */
+@media (max-width: 650px) {
+    body {
+        margin: 20px;
+    }
+
+    .features, 
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
